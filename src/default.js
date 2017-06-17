@@ -1,12 +1,9 @@
 import { join, basename } from 'path';
 import { generateSharedDepsMergeStrategy,
        generateCountingSharedBundleUrlMapper } from 'polymer-bundler';
-import { Analyzer, FSUrlLoader } from 'polymer-analyzer';
+import { FSUrlLoader } from 'polymer-analyzer';
 
 export default ({dest}) => {
-  const analyzer = new Analyzer({
-      urlLoader: new FSUrlLoader(join(process.cwd(), 'build/unbundled'))
-  });
 
   // do something with the options (in this case dest)
   const base = basename(dest);
@@ -25,7 +22,7 @@ export default ({dest}) => {
     inlineJs: true,
     inlineCss: true,
     bundle: true,
-    analyzer: analyzer,
+    urlLoader: new FSUrlLoader(join(process.cwd(), 'build/unbundled')),
     // plugins: 'rollup'
     // Merge shared dependencies into a single bundle when
     // they have at least three dependents.
