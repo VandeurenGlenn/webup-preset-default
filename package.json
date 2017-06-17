@@ -1,6 +1,6 @@
 {
   "name": "webup-preset-default",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/default-node.js",
   "module": "dist/default-es.js",
   "keywords": [
