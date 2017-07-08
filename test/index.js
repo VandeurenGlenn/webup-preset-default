@@ -4,8 +4,8 @@ var _default = require('./../dist/default-node');
 
 var preset = _default({dest: 'build'});
 var keys = [
-  ['dest', 'inlineJs', 'inlineCss', 'bundle'], ['entry', 'sources', 'dest',
-    'inlineJs', 'inlineCss', 'bundle', 'urlLoader', 'strategy', 'urlMapper'
+  ['dest', 'inlineJs', 'inlineCss', 'plugins'], ['cwd', 'entry', 'fragments', 'dest',
+    'inlineJs', 'inlineCss', 'bundle', 'strategy', 'urlMapper'
   ]
 ];
 

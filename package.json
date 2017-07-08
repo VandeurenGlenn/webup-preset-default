@@ -1,6 +1,6 @@
 {
   "name": "webup-preset-default",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "main": "dist/default-node.js",
   "module": "dist/default-es.js",
   "keywords": [
@@ -24,8 +24,8 @@
   },
   "description": "",
   "dependencies": {
-    "polymer-analyzer": "^2.1.0",
-    "polymer-bundler": "^2.0.3"
+    "webup-preset-bundle": "^1.1.2",
+    "webup-preset-http2": "^1.1.0"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
